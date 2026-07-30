@@ -1,0 +1,5 @@
+Created on branch GitNewBranch during GIT HOL 3.
+
+This file exists to prove that a commit made on a branch travels into main
+when the branch is merged. Check the log graph after the merge and this
+file's commit will be part of main's history.

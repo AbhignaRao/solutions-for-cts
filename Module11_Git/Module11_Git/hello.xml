@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  GIT HOL 4 artifact.
+  This file was created separately on main and on GitWork, which produced a
+  content conflict on merge. The version below is the resolved result, kept
+  after the conflict markers were removed by hand.
+-->
+<greeting>
+  <from>main and GitWork, merged</from>
+  <message>Conflict resolved by keeping both contributions.</message>
+</greeting>
