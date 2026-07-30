@@ -1,0 +1,90 @@
+/*
+  Week 9 - React SPA & Application Debugging
+  Global tokens and base element styles.
+*/
+
+:root {
+  --petrol: #12343b;
+  --petrol-soft: #1c4b54;
+  --brass: #b07d21;
+  --brass-bright: #e8b04b;
+  --paper: #eceff0;
+  --surface: #ffffff;
+  --rule: #d2dadd;
+  --ink: #17242a;
+  --muted: #5d7076;
+  --alert: #a52d1f;
+  --thrive: #1c6b45;
+
+  --sans: "Segoe UI", system-ui, -apple-system, Roboto, Helvetica, Arial, sans-serif;
+  --mono: ui-monospace, "SF Mono", "Cascadia Mono", Menlo, Consolas, monospace;
+
+  --step: 8px;
+  --radius: 4px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--sans);
+  font-size: 15px;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0 0 var(--step) 0;
+  line-height: 1.25;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+p {
+  margin: 0 0 var(--step) 0;
+}
+
+ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+button {
+  font: inherit;
+  cursor: pointer;
+}
+
+input,
+select {
+  font: inherit;
+  color: inherit;
+}
+
+a {
+  color: var(--petrol);
+}
+
+:focus-visible {
+  outline: 2px solid var(--brass);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+    animation: none !important;
+  }
+}

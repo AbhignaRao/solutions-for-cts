@@ -1,0 +1,349 @@
+/*
+  Layout for the exercise dashboard, plus the shared UI classes
+  (panels, buttons, fields, tables) that every exercise reuses.
+*/
+
+/* ---------- Dashboard frame ---------- */
+
+.shell {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.masthead {
+  background: var(--petrol);
+  color: #ffffff;
+  padding: 20px 28px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: space-between;
+  align-items: flex-end;
+  border-bottom: 3px solid var(--brass);
+}
+
+.masthead__eyebrow {
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--brass-bright);
+  margin-bottom: 4px;
+}
+
+.masthead__title {
+  font-size: 1.4rem;
+  margin: 0;
+}
+
+.masthead__owner {
+  font-family: var(--mono);
+  font-size: 12px;
+  line-height: 1.7;
+  text-align: right;
+  color: #cfdde0;
+}
+
+.masthead__owner span {
+  display: block;
+}
+
+.workspace {
+  display: flex;
+  align-items: stretch;
+  flex: 1;
+  min-height: 0;
+}
+
+/* ---------- Left index rail ---------- */
+
+.rail {
+  width: 268px;
+  flex-shrink: 0;
+  background: var(--surface);
+  border-right: 1px solid var(--rule);
+  padding: 20px 0;
+}
+
+.rail__caption {
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--muted);
+  padding: 0 20px 12px;
+}
+
+.rail__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.rail__button {
+  display: flex;
+  gap: 12px;
+  align-items: baseline;
+  width: 100%;
+  text-align: left;
+  background: none;
+  border: 0;
+  border-left: 3px solid transparent;
+  padding: 9px 20px;
+  color: var(--ink);
+  transition: background 0.15s ease;
+}
+
+.rail__button:hover {
+  background: #f2f5f6;
+}
+
+.rail__button--active {
+  background: #eaf0f1;
+  border-left-color: var(--brass);
+  font-weight: 600;
+}
+
+.rail__id {
+  font-family: var(--mono);
+  font-size: 12px;
+  color: var(--brass);
+  min-width: 24px;
+}
+
+.rail__label {
+  font-size: 14px;
+}
+
+/* ---------- Stage ---------- */
+
+.stage {
+  flex: 1;
+  min-width: 0;
+  padding: 24px 28px 48px;
+}
+
+.stage__head {
+  border-bottom: 1px solid var(--rule);
+  padding-bottom: 14px;
+  margin-bottom: 22px;
+}
+
+.stage__number {
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.stage__title {
+  font-size: 1.5rem;
+  margin: 4px 0 6px;
+}
+
+.stage__brief {
+  color: var(--muted);
+  max-width: 70ch;
+  margin: 0;
+}
+
+.footnote {
+  padding: 14px 28px;
+  border-top: 1px solid var(--rule);
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--muted);
+}
+
+/* ---------- Shared building blocks ---------- */
+
+.panel {
+  background: var(--surface);
+  border: 1px solid var(--rule);
+  border-radius: var(--radius);
+  padding: 22px 24px;
+  margin-bottom: 18px;
+  max-width: 860px;
+}
+
+.panel__title {
+  font-size: 1.05rem;
+}
+
+.panel__note {
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.tag {
+  display: inline-block;
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+  border: 1px solid var(--rule);
+  border-radius: 2px;
+  padding: 2px 7px;
+  margin-bottom: 10px;
+}
+
+.btn {
+  border: 1px solid var(--petrol);
+  border-radius: var(--radius);
+  background: var(--petrol);
+  color: #ffffff;
+  padding: 8px 16px;
+  transition: background 0.15s ease;
+}
+
+.btn:hover {
+  background: var(--petrol-soft);
+}
+
+.btn--ghost {
+  background: transparent;
+  color: var(--petrol);
+}
+
+.btn--ghost:hover {
+  background: #eaf0f1;
+}
+
+.btn--danger {
+  background: var(--alert);
+  border-color: var(--alert);
+}
+
+.btn--danger:hover {
+  background: #8d2519;
+}
+
+.btn-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 14px 0;
+}
+
+.field {
+  display: block;
+  margin-bottom: 14px;
+  max-width: 340px;
+}
+
+.field__label {
+  display: block;
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 5px;
+}
+
+.field__input {
+  width: 100%;
+  border: 1px solid var(--rule);
+  border-radius: var(--radius);
+  padding: 8px 10px;
+  background: #fbfcfc;
+}
+
+.field__input:focus {
+  border-color: var(--petrol);
+  background: #ffffff;
+}
+
+.readout {
+  font-family: var(--mono);
+  font-size: 1.9rem;
+  color: var(--petrol);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 14px;
+}
+
+.card {
+  border: 1px solid var(--rule);
+  border-radius: var(--radius);
+  padding: 14px 16px;
+  background: #fbfcfc;
+}
+
+.card__title {
+  font-size: 0.98rem;
+  margin-bottom: 6px;
+}
+
+.card__meta {
+  font-size: 13px;
+  color: var(--muted);
+  margin: 2px 0;
+}
+
+.ledger {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.ledger th,
+.ledger td {
+  text-align: left;
+  padding: 9px 10px;
+  border-bottom: 1px solid var(--rule);
+}
+
+.ledger th {
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.notice {
+  border-left: 3px solid var(--brass);
+  background: #fdf7ea;
+  padding: 10px 14px;
+  font-size: 13px;
+  margin-bottom: 16px;
+}
+
+.notice--error {
+  border-left-color: var(--alert);
+  background: #fbeceb;
+  color: var(--alert);
+}
+
+/* ---------- Small screens ---------- */
+
+@media (max-width: 820px) {
+  .workspace {
+    flex-direction: column;
+  }
+
+  .rail {
+    width: 100%;
+    border-right: 0;
+    border-bottom: 1px solid var(--rule);
+  }
+
+  .masthead {
+    align-items: flex-start;
+  }
+
+  .masthead__owner {
+    text-align: left;
+  }
+
+  .stage {
+    padding: 20px 18px 40px;
+  }
+}

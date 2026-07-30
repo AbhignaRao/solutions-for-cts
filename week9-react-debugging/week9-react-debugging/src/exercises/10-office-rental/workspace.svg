@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 260" role="img"
+     aria-label="Flat illustration of a rented office desk beside a window">
+  <rect width="480" height="260" fill="#eceff0"/>
+  <rect x="0" y="196" width="480" height="64" fill="#dbe2e4"/>
+
+  <!-- window -->
+  <rect x="292" y="34" width="150" height="112" rx="3" fill="#cfe0e3" stroke="#12343b" stroke-width="3"/>
+  <line x1="367" y1="34" x2="367" y2="146" stroke="#12343b" stroke-width="3"/>
+  <line x1="292" y1="90" x2="442" y2="90" stroke="#12343b" stroke-width="3"/>
+  <circle cx="410" cy="60" r="12" fill="#e8b04b"/>
+
+  <!-- wall clock -->
+  <circle cx="120" cy="62" r="22" fill="#ffffff" stroke="#12343b" stroke-width="3"/>
+  <path d="M120 50v13l9 6" stroke="#12343b" stroke-width="3" fill="none" stroke-linecap="round"/>
+
+  <!-- desk -->
+  <rect x="60" y="172" width="250" height="10" rx="2" fill="#12343b"/>
+  <rect x="74" y="182" width="9" height="42" fill="#1c4b54"/>
+  <rect x="287" y="182" width="9" height="42" fill="#1c4b54"/>
+
+  <!-- monitor -->
+  <rect x="120" y="108" width="104" height="62" rx="4" fill="#1c4b54"/>
+  <rect x="128" y="116" width="88" height="46" rx="2" fill="#cfe0e3"/>
+  <rect x="164" y="170" width="16" height="6" fill="#12343b"/>
+
+  <!-- notebook and mug -->
+  <rect x="234" y="160" width="46" height="12" rx="2" fill="#ffffff" stroke="#12343b" stroke-width="2"/>
+  <path d="M92 160h20v12H92z" fill="#e8b04b"/>
+  <path d="M112 163h7a4 4 0 0 1 0 8h-7" fill="none" stroke="#e8b04b" stroke-width="3"/>
+
+  <!-- chair -->
+  <rect x="176" y="196" width="56" height="9" rx="4" fill="#12343b"/>
+  <rect x="200" y="205" width="8" height="26" fill="#12343b"/>
+  <path d="M186 231h36" stroke="#12343b" stroke-width="6" stroke-linecap="round"/>
+
+  <!-- plant -->
+  <path d="M406 196v-28" stroke="#1c6b45" stroke-width="4"/>
+  <path d="M406 176c-16-4-22-18-20-30 12 2 22 14 20 30z" fill="#1c6b45"/>
+  <path d="M406 182c16-6 20-22 16-34-12 4-20 18-16 34z" fill="#248257"/>
+  <path d="M392 196h28l-4 28h-20z" fill="#b07d21"/>
+</svg>
